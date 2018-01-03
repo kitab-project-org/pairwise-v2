@@ -1,0 +1,177 @@
+body {
+  font: 10px sans-serif;
+}
+
+.chart-box {
+  border: 3px solid gray;
+  overflow: hidden;
+}
+
+.tick line {
+  stroke: none;
+  shape-rendering: crispEdges;
+  stroke-dasharray: 5, 5;
+}
+
+.domain {
+  stroke-width: 3;
+  stroke: #FFCC66;
+}
+
+.connection {
+  fill: none;
+}
+
+.bar {
+  stroke: red;
+}
+
+.brush .extent {
+  stroke: gray;
+  fill: blue;
+  fill-opacity: .165;
+}
+
+.brush .overlay {
+  cursor: auto !important;
+}
+
+.max-reference-lines {
+  stroke-width: 5;
+  stroke: black;
+}
+
+.dotted-bar-lines {
+  stroke-dasharray: 3 6;
+  stroke: red;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 130px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0;
+  border-radius: 8px;
+  line-height: 18px;
+  margin-left: 6px;
+}
+
+
+/*--Books View Bottom Panel -- [START]--*/
+
+#bottomPanelRaw {
+  margin-top: 10px;
+}
+
+.bottom-panel {
+  height: 430px;
+  /*background-color: #111;*/
+  overflow: hidden;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.book-content {
+  padding: 0 8px;
+  transition: 0.3s;
+  width: calc(50% - 20px);
+  height: calc(100% - 94px);
+  /*color: #afafaf;*/
+  font-size: 14px;
+  display: inline-block;
+  overflow-y: auto;
+  vertical-align: top;
+}
+
+.bottom-panel .closebtn {
+  color: #818181;
+  font-size: 36px;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  text-align: right;
+  margin-bottom: -48px;
+}
+
+.bottom-panel a.closebtn:hover {
+  color: #e0e0e0;
+}
+
+
+/*#main {
+  transition: margin-left 0.5s;
+  padding: 10px;
+}*/
+
+@media screen and (max-height: 450px) {
+  .bottom-panel .book-content {
+    font-size: 12px;
+  }
+}
+
+
+/*--Books View Bottom Panel -- [END]--*/
+
+h1 {
+  font-size: 24px !important;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*header-level: 1 to 5*/
+  font-size: 28px !important;
+}
+
+h2 {
+  color: red;
+}
+
+h3 {
+  color: orange;
+}
+
+h4 {
+  color: yellow;
+}
+
+h5 {
+  color: green;
+}
+
+h6 {
+  color: blue;
+}
+
+selection,
+.selected-para-label {
+  background-color: yellow;
+}
+
+.loader-btn-wrapper {
+  margin: 10px 0 10px;
+  width: calc(50% - 2px);
+  display: inline-block;
+}
+
+.loader-btn {
+  width: 30%;
+  border-radius: 2px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: block;
+  background: #219150;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.loader-btn:hover {
+  background: green;
+}

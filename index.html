@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>KITAB - D3 Visualisation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="loader.css">
+	<script type="text/javascript" src="d3.v4.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/data-loader.js"></script>
+	<script src="js/graph_helper.js"></script>
+	<script type="text/javascript" src="marked.js"></script>
+</head>
+
+<body>
+
+	<div id="book-details"></div>
+	<div id="main">
+		<div id="chartBox" class="chart-box"></div>
+	</div>
+
+	<div id="bottomPanelRaw" style="display: none;">
+		<div id="book1RawContent" class="book-content"></div>
+		<div id="book2RawContent" class="book-content"></div>
+	</div>
+
+	<!--Books View Bottom Panel [START]-->
+	<div id="mySidenav" class="bottom-panel" style="opacity: 0; display: none">
+		<a id="closeBtn" href="javascript:void(0)" class="closebtn">&times;</a>
+
+		<div class="loader-btn-wrapper">
+			<label id="book1StartBtn" class="loader-btn book1">LOAD MORE</label>
+		</div>
+		<div class="loader-btn-wrapper">
+			<label id="book2StartBtn" class="loader-btn book2">LOAD MORE</label>
+		</div>
+
+		<div id="book1Content" class="book-content"></div>
+		<!--Book1 Loader [START]-->
+		<div id="book1Loader" class="book-content">
+			<div id="fountainG" style="top: 40%">
+				<div id="fountainG_1" class="fountainG"></div>
+				<div id="fountainG_2" class="fountainG"></div>
+				<div id="fountainG_3" class="fountainG"></div>
+				<div id="fountainG_4" class="fountainG"></div>
+				<div id="fountainG_5" class="fountainG"></div>
+				<div id="fountainG_6" class="fountainG"></div>
+				<div id="fountainG_7" class="fountainG"></div>
+				<div id="fountainG_8" class="fountainG"></div>
+			</div>
+		</div>
+		<!--Book1 Loader [END]-->
+
+		<div id="book2Content" class="book-content"></div>
+		<!--Book2 Loader [START]-->
+		<div id="book2Loader" class="book-content">
+			<div id="fountainG" style="top: 40%">
+				<div id="fountainG_1" class="fountainG"></div>
+				<div id="fountainG_2" class="fountainG"></div>
+				<div id="fountainG_3" class="fountainG"></div>
+				<div id="fountainG_4" class="fountainG"></div>
+				<div id="fountainG_5" class="fountainG"></div>
+				<div id="fountainG_6" class="fountainG"></div>
+				<div id="fountainG_7" class="fountainG"></div>
+				<div id="fountainG_8" class="fountainG"></div>
+			</div>
+		</div>
+		<!--Book2 Loader [END]-->
+
+		<div class="loader-btn-wrapper">
+			<label id="book1EndBtn" class="loader-btn book1">LOAD MORE</label>
+		</div>
+		<div class="loader-btn-wrapper">
+			<label id="book2EndBtn" class="loader-btn book2">LOAD MORE</label>
+		</div>
+
+	</div>
+	<!--Books View Bottom Panel [END]-->
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script>
+		renderVisual('Shamela0035100_JK006838.srt', {
+			book1: 'Shamela0035100',
+			book2: 'JK006838'
+		});
+	</script>
+</body>
+
+</html>
