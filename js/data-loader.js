@@ -113,6 +113,8 @@
 
   }
   function parseBookIntoHtml(text) {
+    text = text.replace(/\(@\)/g, "\n"); 
+    text =  text.replace(/\(@@\)/g, "#");
     text = marked(text);
     return text;
   }
