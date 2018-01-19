@@ -130,7 +130,7 @@ function parseText(pageStr, bookName) {
 }
 function filterBookNoise(text) {
   text = text.replace(/\(@\)/g, "\n"); 
-  text.replace(/\(@@\)/g, " #");
+  text =  text.replace(/\(@@\)/g, " #");
   text = text.replace(/\n~~/g, ' ');
   text = text.replace(/ +/g, ' ');
   text = text.replace(/### \|+/g, function (match) {
