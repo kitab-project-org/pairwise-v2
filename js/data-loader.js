@@ -128,7 +128,7 @@
     currentPara.html(parseBookIntoHtml(content));
 
     var rawContent = '<div class="booktitle">' + bookName
-      + ' (ms' + selectedMatchData[bookName + '_chunk'] + ')</div>'
+      + ' Milestone: ' + selectedMatchData[bookName + '_chunk'] + '</div>'
       + selectedMatchData[bookName + '_raw_content'];
     d3.select('#' + bookName + 'RawContent').html(rawContent);
 

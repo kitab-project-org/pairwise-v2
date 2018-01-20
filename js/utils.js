@@ -67,8 +67,8 @@
     //text = text.replace(/ /g, '[\\s\\w\\#\\n\\@\\$\\|\\(\\)-]+');
     //text = text.replace(/ /g, '((\\W+(\\d+)?)?(Page\\w+)?)+');       // new from max
     //text = text.replace(/ /g, '(\\W+(\\d+)?)?(note\\w+|Page\\w+)?');  // old from max
-     //text = text.replace(/ /g, '(\W+(\d+)?)?(note\w+|<[^<]+>|Page\w+)?');
-     text = text.replace(/ /g, '(\\W+|\\d+| |note\\w+|<[^<]+>|Page\\w+)*');
+     text = text.replace(/ /g, '(\W+(\d+)?)?(note\w+|<[^<]+>|Page\w+)?');
+     //text = text.replace(/ /g, '(\\W+|\\d+| |note\\w+|<[^<]+>|Page\\w+)*');
     // -------------------------------------
 
     return new RegExp(text);
@@ -88,5 +88,7 @@
       selection.addRange(range);
     }
   }
+
+
 
 })(window.utils = {});

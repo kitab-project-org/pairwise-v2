@@ -1,0 +1,26 @@
+{
+  "name": "pairwise-visualisation-v2",
+  "version": "1.0.0",
+  "description": "Pairwise Visualisation Version 2 - January 2018",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kitab-project/pairwise-v2.git"
+  },
+  "keywords": [
+    "KITAB"
+  ],
+  "author": "KITAB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kitab-project/pairwise-v2/issues"
+  },
+  "homepage": "https://github.com/kitab-project/pairwise-v2#readme",
+  "devDependencies": {
+    "express": "^4.16.2"
+  }
+}

@@ -1,10 +1,18 @@
 body {
-  font: 10px sans-serif;
+  font-size: 11px ;
+  font-family: 'Amiri', serif;
+}
+.container{
+
+  padding: 10px;
 }
 
 .chart-box {
-  border: 3px solid gray;
+  border: 1px solid #d0d0d0;
   overflow: hidden;
+  bdox-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+  
 }
 
 .tick line {
@@ -60,33 +68,55 @@ div.tooltip {
 }
 
 
+.books-details{
+  float:left;
+  border: 0px red solid;
+  width: 48.5%;
+  
+  
+}
+.books-details-container{
+
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  height: 150px;
+  border-bottom: #eceaea 1px dashed;
+}
+
+
 /*--Books View Bottom Panel -- [START]--*/
 
 #bottomPanelRaw {
   margin-top: 10px;
 }
 
-.bottom-panel {
-  height: 430px;
+.book-reader{
+  height: 550px;
   /*background-color: #111;*/
   overflow: hidden;
   transition: 0.5s;
   margin-bottom: 20px;
+  bdorder: 1px dashed #d0d0d0;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .book-content {
-  padding: 0 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   transition: 0.3s;
   width: calc(50% - 20px);
-  height: calc(100% - 94px);
+  height: calc(100% - 125px);
   /*color: #afafaf;*/
   font-size: 14px;
   display: inline-block;
   overflow-y: auto;
   vertical-align: top;
+  border: 1px #e0e0e0 solid;
 }
 
-.bottom-panel .closebtn {
+.book-reader .closebtn {
   color: #818181;
   font-size: 36px;
   padding: 2px 5px;
@@ -97,7 +127,7 @@ div.tooltip {
   margin-bottom: -48px;
 }
 
-.bottom-panel a.closebtn:hover {
+.book-reader a.closebtn:hover {
   color: #e0e0e0;
 }
 
@@ -108,7 +138,7 @@ div.tooltip {
 }*/
 
 @media screen and (max-height: 450px) {
-  .bottom-panel .book-content {
+  .book-reader .book-content {
     font-size: 12px;
   }
 }
@@ -117,7 +147,7 @@ div.tooltip {
 /*--Books View Bottom Panel -- [END]--*/
 
 h1 {
-  font-size: 24px !important;
+  font-size: 20px !important;
 }
 
 h2,
@@ -151,7 +181,9 @@ h6 {
 
 selection,
 .selected-para-label {
-  background-color: yellow;
+  background-color: #eceaea;
+  padding-left: 5px;
+  
 }
 
 .loader-btn-wrapper {
