@@ -60,7 +60,7 @@
           .enter().append('div').attr('class', 'books-details')
           .append('a').attr('class', 'a-width')
           .attr('href', function (d) { return d.github_url; })
-          .text(function (d) { return 'Github Book URL: ' + utils.replaceParams(config.book_content_url, { 'book_id': d.book_id }); });
+          .text(function (d) { return 'Github Book URL: ' + utils.replaceParams(config.book_github_url, { 'book_id': d.book_id }); });
 
         bookDetails.selectAll('div')
           .append('p')
