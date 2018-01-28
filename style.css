@@ -75,13 +75,14 @@ div.tooltip {
   
   
 }
+
 .books-details-container{
 
   width: 100%;
   display: block;
   margin-bottom: 20px;
-  height: 150px;
-  border-bottom: #eceaea 1px dashed;
+  height: 120px;
+  border-bottom: #e0e0e0 1px dashed;
 }
 
 
@@ -89,31 +90,51 @@ div.tooltip {
 
 #bottomPanelRaw {
   margin-top: 10px;
+  border-bottom: 1px #e0e0e0 dashed;
+ 
+}
+.panel {
+  bdackground-image: url(../Images/icons/education31.png);
+  background-position: 10px 6px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+
+
 }
 
 .book-reader{
   height: 550px;
-  /*background-color: #111;*/
+  background-color:#fcfcfc;
   overflow: hidden;
   transition: 0.5s;
   margin-bottom: 20px;
-  bdorder: 1px dashed #d0d0d0;
+  bdorder: 1px dashed #dbdbdb;
   margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
+
+.label{
+
+  padding-left: 5px;
+  display: block;
+  font-size: 13px;
 }
 
 .book-content {
   padding-left: 5px;
   padding-right: 5px;
   transition: 0.3s;
-  width: calc(50% - 20px);
+  width: calc(50% - 14px);
   height: calc(100% - 125px);
   /*color: #afafaf;*/
-  font-size: 14px;
+  font-size: 17px;
   display: inline-block;
   overflow-y: auto;
   vertical-align: top;
-  border: 1px #e0e0e0 solid;
+  border-bottom: 0px #e0e0e0 solid;
+  background-color: #fff;
+  direction: rtl;
 }
 
 .book-reader .closebtn {
@@ -181,9 +202,13 @@ h6 {
 
 selection,
 .selected-para-label {
-  background-color: #eceaea;
+  background-color: #fcfcfc;
   padding-left: 5px;
+ 
   
+}
+.label-chunk{
+  font-style: italic;
 }
 
 .loader-btn-wrapper {

@@ -339,8 +339,8 @@
             });
     }
     function showToolTip(d1) {
-        var html = 'Book1: #' + d1.book1_chunk + ' (' + d1.book1_y1 + '-' + d1.book1_y2 + ')<br/>'
-            + 'Book2: #' + d1.book2_chunk + '' + ' (' + d1.book2_y1 + '-' + d1.book2_y2 + ')';
+        var html = 'Book 1: #' + d1.book1_chunk + ' (' + d1.book1_y1 + '-' + d1.book1_y2 + ')<br/>'
+            + 'Book 2: #' + d1.book2_chunk + '' + ' (' + d1.book2_y1 + '-' + d1.book2_y2 + ')';
 
         toolTipDiv
             .style("display", null);

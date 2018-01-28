@@ -58,24 +58,24 @@
         bookDetails.selectAll('.book-details')
           .data(selectedMetadata)
           .enter().append('div').attr('class', 'books-details')
-          .append('a').attr('class', 'a-width')
-          .attr('href', function (d) { return d.github_url; })
+          .append('a').attr('class', 'a-width label')
+          .attr('href', function (d) { return d.book_github_url; })
           .text(function (d) { return 'Github Book URL: ' + utils.replaceParams(config.book_github_url, { 'book_id': d.book_id }); });
 
         bookDetails.selectAll('div')
-          .append('p')
+          .append('span').attr('class', 'label')
           .text(function (d) { return 'Book Author: ' + d.book_author; });
 
         bookDetails.selectAll('div')
-          .append('p')
+          .append('span').attr('class', 'label')
           .text(function (d) { return 'Word Count: ' + d.book_word_count; });
 
         bookDetails.selectAll('div')
-          .append('p')
+          .append('span').attr('class', 'label')
           .text(function (d) { return 'Book Title: ' + d.book_title; });
 
         bookDetails.selectAll('div')
-          .append('p')
+          .append('span').attr('class', 'label')
           .text(function (d) { return 'Book URI: ' + d.book_uri; });
 
         eventBindings();
